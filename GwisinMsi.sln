@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32802.440
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "GwisinMsi", "GwisinMsi.vdproj", "{8CDDDCE6-607D-4FDA-9953-6CEFF9C296BA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GwisinDll", "GwisinDll\GwisinDll.vcxproj", "{26C1987E-1CBF-4CDD-9E2D-736306CC534A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8CDDDCE6-607D-4FDA-9953-6CEFF9C296BA}.Debug|x64.ActiveCfg = Debug
+		{8CDDDCE6-607D-4FDA-9953-6CEFF9C296BA}.Debug|x64.Build.0 = Debug
+		{8CDDDCE6-607D-4FDA-9953-6CEFF9C296BA}.Debug|x86.ActiveCfg = Debug
+		{8CDDDCE6-607D-4FDA-9953-6CEFF9C296BA}.Debug|x86.Build.0 = Debug
+		{8CDDDCE6-607D-4FDA-9953-6CEFF9C296BA}.Release|x64.ActiveCfg = Release
+		{8CDDDCE6-607D-4FDA-9953-6CEFF9C296BA}.Release|x64.Build.0 = Release
+		{8CDDDCE6-607D-4FDA-9953-6CEFF9C296BA}.Release|x86.ActiveCfg = Release
+		{8CDDDCE6-607D-4FDA-9953-6CEFF9C296BA}.Release|x86.Build.0 = Release
+		{26C1987E-1CBF-4CDD-9E2D-736306CC534A}.Debug|x64.ActiveCfg = Debug|x64
+		{26C1987E-1CBF-4CDD-9E2D-736306CC534A}.Debug|x64.Build.0 = Debug|x64
+		{26C1987E-1CBF-4CDD-9E2D-736306CC534A}.Debug|x86.ActiveCfg = Debug|Win32
+		{26C1987E-1CBF-4CDD-9E2D-736306CC534A}.Debug|x86.Build.0 = Debug|Win32
+		{26C1987E-1CBF-4CDD-9E2D-736306CC534A}.Release|x64.ActiveCfg = Release|x64
+		{26C1987E-1CBF-4CDD-9E2D-736306CC534A}.Release|x64.Build.0 = Release|x64
+		{26C1987E-1CBF-4CDD-9E2D-736306CC534A}.Release|x86.ActiveCfg = Release|Win32
+		{26C1987E-1CBF-4CDD-9E2D-736306CC534A}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5599A1D7-28E2-400F-88B8-3965155C5F61}
+	EndGlobalSection
+EndGlobal
