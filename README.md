@@ -1,6 +1,6 @@
 # GwisinMsi 
 
-This repo contains the PoC of the MSI payload used in the blog post (TODO). The payload is based on the Gwisin ransomware's MSI payload analysis of the AhnLab ASEC team's [blog post](https://asec.ahnlab.com/en/37483/).
+This repo contains the PoC of the MSI payload used in the [blog post](https://blog.sunggwanchoi.com/recreating-a-msi-payload-for-fun-and-no-profit/). The payload is based on the Gwisin ransomware's MSI payload analysis of the AhnLab ASEC team's [blog post](https://asec.ahnlab.com/en/37483/).
 
 ## DLL Compiling Configuration 
 - Project > Project properties > c/c++ > preprocessor > processor definition - `_CRT_SECURE_NO_WARNINGS` 
