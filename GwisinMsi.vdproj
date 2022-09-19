@@ -15,7 +15,7 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_505448E413714BB8A6D0BE1AD5A04BF6"
+        "MsmKey" = "8:_D42A3724FA684F68BB55690DB47300B8"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -59,19 +59,19 @@
     {
         "CustomAction"
         {
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_84BC3297D6DB4249858897ECA8D70D02"
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_5327BE0E34934EC283AB13E215E8EEBE"
             {
             "Name" = "8:GwisinDll.dll"
             "Condition" = "8:"
-            "Object" = "8:_505448E413714BB8A6D0BE1AD5A04BF6"
+            "Object" = "8:_D42A3724FA684F68BB55690DB47300B8"
             "FileType" = "3:1"
             "InstallAction" = "3:1"
             "Arguments" = "8:"
             "EntryPoint" = "8:GwisinCustom"
             "Sequence" = "3:1"
-            "Identifier" = "8:_222DCDBB_CE20_4A7B_A0AF_F89FD954782C"
+            "Identifier" = "8:_88F4EDE8_92E4_40F7_86F0_C4BA835A83E8"
             "InstallerClass" = "11:FALSE"
-            "CustomActionData" = "8:SERIAL=[SERIAL] LICENSE=[LICENSE]"
+            "CustomActionData" = "8:SERIAL=[SERIAL] LICENS=[LICENSE]"
             "Run64Bit" = "11:TRUE"
             }
         }
@@ -89,7 +89,7 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_505448E413714BB8A6D0BE1AD5A04BF6"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_D42A3724FA684F68BB55690DB47300B8"
             {
             "SourcePath" = "8:GwisinDll\\x64\\Release\\GwisinDll.dll"
             "TargetName" = "8:GwisinDll.dll"
@@ -177,7 +177,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:GwisinMsi"
         "ProductCode" = "8:{7560697C-E18E-4E30-8EEC-1C2E5953C4E3}"
-        "PackageCode" = "8:{59734336-4825-4E83-862D-C96E793CDAA0}"
+        "PackageCode" = "8:{9B40BDB7-E209-407F-BB08-BC30EEF0B673}"
         "UpgradeCode" = "8:{18E0FDEB-5E51-4B04-A94E-DB2D21AF27C6}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
